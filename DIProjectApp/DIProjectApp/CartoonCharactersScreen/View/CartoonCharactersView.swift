@@ -10,7 +10,6 @@ import SwiftUI
 struct CartoonCharactersView: View {
     @ObservedObject var viewModel: CartoonCharactersViewModel
     
-    
     var body: some View {
         if viewModel.isConnected {
             if viewModel.loadedCharacters.isEmpty {
@@ -31,7 +30,7 @@ struct CartoonCharactersView: View {
 #Preview {
     CartoonCharactersView(
     viewModel: CartoonCharactersViewModel(
-        api: CartoonApi(),
-        manager: NetworkMonitor())
+        api: CartoonApi(), //Теперь можно подставить моки
+        manager: NetworkMonitor()) //Теперь можно подставить моки
     )
 }

@@ -19,7 +19,7 @@ class CartoonCharactersViewModel: ObservableObject {
     private var manager: WIFIManager
     private var disposeBag: Set<AnyCancellable> = []
     
-    init(api: CartoonApi, manager: NetworkMonitor) {
+    init(api: ServerApi, manager: WIFIManager) {
         self.api = api
         self.manager = manager
         

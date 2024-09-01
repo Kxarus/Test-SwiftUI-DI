@@ -18,6 +18,8 @@
 		30661CB52C84672D00D73099 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30661CB42C84672D00D73099 /* NetworkMonitor.swift */; };
 		30661CB72C8469FF00D73099 /* ServerApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30661CB62C8469FF00D73099 /* ServerApi.swift */; };
 		30661CB92C846A6C00D73099 /* WIFIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30661CB82C846A6C00D73099 /* WIFIManager.swift */; };
+		30661CBC2C846B7B00D73099 /* ApiMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30661CBB2C846B7B00D73099 /* ApiMocks.swift */; };
+		30661CBE2C846B8D00D73099 /* WifiMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30661CBD2C846B8D00D73099 /* WifiMocks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		30661CB42C84672D00D73099 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		30661CB62C8469FF00D73099 /* ServerApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerApi.swift; sourceTree = "<group>"; };
 		30661CB82C846A6C00D73099 /* WIFIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIFIManager.swift; sourceTree = "<group>"; };
+		30661CBB2C846B7B00D73099 /* ApiMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMocks.swift; sourceTree = "<group>"; };
+		30661CBD2C846B8D00D73099 /* WifiMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiMocks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,7 @@
 		30661C962C8458A800D73099 /* DIProjectApp */ = {
 			isa = PBXGroup;
 			children = (
+				30661CBA2C846B5E00D73099 /* Mocks */,
 				30661CB12C84661900D73099 /* Service */,
 				30661CA52C8458CE00D73099 /* CartoonCharactersScreen */,
 				30661C972C8458A800D73099 /* DIProjectAppApp.swift */,
@@ -126,6 +131,15 @@
 				30661CB82C846A6C00D73099 /* WIFIManager.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		30661CBA2C846B5E00D73099 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				30661CBB2C846B7B00D73099 /* ApiMocks.swift */,
+				30661CBD2C846B8D00D73099 /* WifiMocks.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +213,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				30661CAA2C8459F400D73099 /* CartoonCharactersView.swift in Sources */,
+				30661CBE2C846B8D00D73099 /* WifiMocks.swift in Sources */,
 				30661CB32C84662B00D73099 /* CartoonApi.swift in Sources */,
 				30661CAE2C845DC100D73099 /* ServerResponse.swift in Sources */,
 				30661CB72C8469FF00D73099 /* ServerApi.swift in Sources */,
+				30661CBC2C846B7B00D73099 /* ApiMocks.swift in Sources */,
 				30661C982C8458A800D73099 /* DIProjectAppApp.swift in Sources */,
 				30661CAC2C845A5D00D73099 /* CartoonCharactersViewModel.swift in Sources */,
 				30661CB02C845DFE00D73099 /* CartoonCharacter.swift in Sources */,
