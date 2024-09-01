@@ -11,7 +11,12 @@ import SwiftUI
 struct DIProjectAppApp: App {
     var body: some Scene {
         WindowGroup {
-            CartoonCharactersView()
+            CartoonCharactersView(
+                viewModel: CartoonCharactersViewModel(
+                    api: CartoonApi(),
+                    manager: NetworkMonitor()
+                )
+            )
         }
     }
 }

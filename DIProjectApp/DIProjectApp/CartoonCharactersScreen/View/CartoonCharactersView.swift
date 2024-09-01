@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CartoonCharactersView: View {
-    @ObservedObject var viewModel = CartoonCharactersViewModel()
+    @ObservedObject var viewModel: CartoonCharactersViewModel
     
     
     var body: some View {
@@ -29,5 +29,9 @@ struct CartoonCharactersView: View {
 }
 
 #Preview {
-    CartoonCharactersView()
+    CartoonCharactersView(
+    viewModel: CartoonCharactersViewModel(
+        api: CartoonApi(),
+        manager: NetworkMonitor())
+    )
 }
